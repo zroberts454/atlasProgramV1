@@ -4,6 +4,17 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+	  <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="atlas_lco.ico" />
+    <None Remove="atlas_logo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="atlas_lco.ico" />
+    <Resource Include="atlas_logo.jpg" />
+  </ItemGroup>
 
 </Project>

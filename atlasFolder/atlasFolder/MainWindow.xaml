@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:atlasFolder"
         mc:Ignorable="d"
-        Title="Atlas Case Maker" Height="450" Width="800">
+        Title="Atlas Case Maker" Height="450" Width="800" Icon="/atlas_lco.ico">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFFF8000"/>
+            <GradientStop Color="#FFF70000" Offset="0.97"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
+        <Button x:Name="jobcaseFolder" Content="Find Job Case Folder" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="206" Click="jobcaseFolder_Click" Height="42"/>
+        <TextBox x:Name="jobcaseFolderText" HorizontalAlignment="Left" Margin="231,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" Height="42" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Job Case Folder Location" HorizontalAlignment="Left" Margin="225,62,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="stageforceCreate" Content="Create Stageforce Case Folder" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="206" Height="42"/>
+        <Label Content="Version 0.1" HorizontalAlignment="Left" Margin="706,398,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
